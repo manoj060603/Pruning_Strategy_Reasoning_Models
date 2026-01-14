@@ -1,0 +1,92 @@
+[
+    {
+        "id": 0,
+        "correct": true,
+        "model_answer": "204",
+        "gt_answer": "204",
+        "tokens_total": 3061,
+        "tokens_pruned": 629,
+        "reduction_pct": 17.046070460704605
+    },
+    {
+        "id": 1,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "113",
+        "tokens_total": 8192,
+        "tokens_pruned": 2877,
+        "reduction_pct": 25.9915078146174
+    },
+    {
+        "id": 2,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "371",
+        "tokens_total": 8192,
+        "tokens_pruned": 642,
+        "reduction_pct": 7.267376047090786
+    },
+    {
+        "id": 3,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "385",
+        "tokens_total": 7276,
+        "tokens_pruned": 717,
+        "reduction_pct": 8.970349055423496
+    },
+    {
+        "id": 4,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "110",
+        "tokens_total": 1514,
+        "tokens_pruned": 222,
+        "reduction_pct": 12.788018433179724
+    },
+    {
+        "id": 5,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "104",
+        "tokens_total": 1,
+        "tokens_pruned": 0,
+        "reduction_pct": 0
+    },
+    {
+        "id": 6,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "721",
+        "tokens_total": 1,
+        "tokens_pruned": 0,
+        "reduction_pct": 0
+    },
+    {
+        "id": 7,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "25",
+        "tokens_total": 1,
+        "tokens_pruned": 0,
+        "reduction_pct": 0
+    },
+    {
+        "id": 8,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "809",
+        "tokens_total": 1,
+        "tokens_pruned": 0,
+        "reduction_pct": 0
+    },
+    {
+        "id": 9,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "116",
+        "tokens_total": 1,
+        "tokens_pruned": 0,
+        "reduction_pct": 0
+    }
+]

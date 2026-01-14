@@ -1,0 +1,102 @@
+[
+    {
+        "id": 0,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "204",
+        "tokens_total": 2048,
+        "tokens_pruned": 359,
+        "reduction_pct": 14.91483174075613,
+        "time": 71.11430716514587
+    },
+    {
+        "id": 1,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "113",
+        "tokens_total": 2048,
+        "tokens_pruned": 519,
+        "reduction_pct": 20.218153486560187,
+        "time": 70.0085940361023
+    },
+    {
+        "id": 2,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "371",
+        "tokens_total": 2048,
+        "tokens_pruned": 206,
+        "reduction_pct": 9.139307897071872,
+        "time": 72.51083827018738
+    },
+    {
+        "id": 3,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "385",
+        "tokens_total": 2048,
+        "tokens_pruned": 270,
+        "reduction_pct": 11.647972389991372,
+        "time": 70.51017451286316
+    },
+    {
+        "id": 4,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "110",
+        "tokens_total": 2048,
+        "tokens_pruned": 742,
+        "reduction_pct": 26.594982078853047,
+        "time": 66.21769142150879
+    },
+    {
+        "id": 5,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "104",
+        "tokens_total": 2048,
+        "tokens_pruned": 551,
+        "reduction_pct": 21.200461716044632,
+        "time": 67.62836289405823
+    },
+    {
+        "id": 6,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "721",
+        "tokens_total": 2048,
+        "tokens_pruned": 360,
+        "reduction_pct": 14.950166112956811,
+        "time": 67.43481230735779
+    },
+    {
+        "id": 7,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "25",
+        "tokens_total": 2048,
+        "tokens_pruned": 593,
+        "reduction_pct": 22.4536160545248,
+        "time": 67.47755026817322
+    },
+    {
+        "id": 8,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "809",
+        "tokens_total": 2048,
+        "tokens_pruned": 339,
+        "reduction_pct": 14.201927105152912,
+        "time": 65.8500304222107
+    },
+    {
+        "id": 9,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "116",
+        "tokens_total": 2048,
+        "tokens_pruned": 493,
+        "reduction_pct": 19.401810310901222,
+        "time": 67.4053544998169
+    }
+]

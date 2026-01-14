@@ -1,0 +1,92 @@
+[
+    {
+        "id": 0,
+        "correct": true,
+        "model_answer": "204",
+        "gt_answer": "204",
+        "tokens_total": 5899,
+        "tokens_pruned": 1540,
+        "reduction_pct": 20.701707218712194
+    },
+    {
+        "id": 1,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "113",
+        "tokens_total": 8192,
+        "tokens_pruned": 2348,
+        "reduction_pct": 22.277039848197344
+    },
+    {
+        "id": 2,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "371",
+        "tokens_total": 8192,
+        "tokens_pruned": 1225,
+        "reduction_pct": 13.008389083572263
+    },
+    {
+        "id": 3,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "385",
+        "tokens_total": 8192,
+        "tokens_pruned": 2368,
+        "reduction_pct": 22.424242424242426
+    },
+    {
+        "id": 4,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "110",
+        "tokens_total": 8192,
+        "tokens_pruned": 3882,
+        "reduction_pct": 32.15173099221468
+    },
+    {
+        "id": 5,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "104",
+        "tokens_total": 8192,
+        "tokens_pruned": 2665,
+        "reduction_pct": 24.5463756102054
+    },
+    {
+        "id": 6,
+        "correct": false,
+        "model_answer": "673",
+        "gt_answer": "721",
+        "tokens_total": 7968,
+        "tokens_pruned": 2145,
+        "reduction_pct": 21.210323346188076
+    },
+    {
+        "id": 7,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "25",
+        "tokens_total": 8192,
+        "tokens_pruned": 2559,
+        "reduction_pct": 23.80243698260627
+    },
+    {
+        "id": 8,
+        "correct": false,
+        "model_answer": null,
+        "gt_answer": "809",
+        "tokens_total": 8192,
+        "tokens_pruned": 1837,
+        "reduction_pct": 18.316881044969588
+    },
+    {
+        "id": 9,
+        "correct": true,
+        "model_answer": "116",
+        "gt_answer": "116",
+        "tokens_total": 3686,
+        "tokens_pruned": 1165,
+        "reduction_pct": 24.015666872809728
+    }
+]
