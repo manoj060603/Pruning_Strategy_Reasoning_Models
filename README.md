@@ -32,45 +32,6 @@ We evaluated the pipeline on a subset of the AIME 2024 dataset using `DeepSeek-R
 
 **Key Finding:** Hard math problems require a "Conservative" pruning approach. Aggressive pruning causes the model to hallucinate or regenerate deleted steps, negating efficiency gains.
 
----
-
-## 🛠️ Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/ClearThink.git
-    cd ClearThink
-    ```
-
-2.  **Install dependencies:**
-    ```bash
-    pip install torch transformers accelerate datasets numpy pandas
-    ```
-
-3.  **Hardware Requirements:**
-    *   GPU with 24GB+ VRAM (RTX 3090/4090 or A100/A10G).
-    *   Implementation uses `bfloat16` for memory efficiency.
-
----
-
-## 📂 Project Structure
-
-```text
-ClearThink/
-├── src/
-│   ├── baseline.py           # (Hour 1) Standard generation benchmark
-│   ├── robust_probe.py       # (Hour 4) Stateless attention measurement
-│   ├── context_refresh.py    # (Hour 6) The core pruning logic
-│   └── run_experiment.py     # (Hour 9-11) Main execution script
-├── results/
-│   ├── results_exp_a.json    # Logs for Conservative Mode
-│   └── results_exp_b.json    # Logs for Balanced Mode
-├── analysis.py               # (Hour 12) Data processing & Table generation
-└── README.md
-```
-
----
-
 ## 🧠 Methodology
 
 ### 1. The "Probe"
@@ -86,40 +47,6 @@ Simply slicing the Key-Value (KV) cache tensor breaks modern LLMs because of Rot
 3.  **Flushing the KV Cache (`None`)** and re-feeding the optimized prompt.
 4.  This forces the model to re-compute correct positional embeddings for the shortened sequence.
 
----
-
-## 💻 Usage
-
-**1. Run the Baseline:**
-```bash
-python src/baseline.py
-```
-
-**2. Run Experiments:**
-You can modify the `PRUNING_RATIO` in `run_experiment.py` (0.25, 0.40, 0.65).
-```bash
-python src/run_experiment.py
-```
-
-**3. Generate Comparison Table:**
-```bash
-python analysis.py
-```
-
----
-
-## 🔮 Future Work
-
-Based on the findings, the next iteration of this project will implement **Confidence-Weighted Attention**. 
-
-By calculating the **Harmonic Mean** of token probabilities within a chunk, we can distinguish between:
-*   **Redundant Fluff:** High Confidence + Low Attention ($\rightarrow$ Prune)
-*   **Critical Leaps:** Low Confidence + Low Attention ($\rightarrow$ Protect)
-
-This acts as a zero-shot difficulty detector to prevent the "Underthinking" observed in Aggressive Mode.
-
----
-
 ## 📜 References
 
 1.  **Think Clearly: Improving Reasoning via Redundant Token Pruning**
@@ -128,7 +55,3 @@ This acts as a zero-shot difficulty detector to prevent the "Underthinking" obse
     *Singh et al. (2025)* - [arXiv:2510.01581](https://arxiv.org/abs/2510.01581)
 
 ---
-
-## 📄 License
-
-MIT License. Feel free to use this code for research and educational purposes.
