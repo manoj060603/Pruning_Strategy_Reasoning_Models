@@ -51,14 +51,14 @@ To measure the importance of a past reasoning step without altering the generati
 
 ```mermaid
 graph LR
-    A[Current Context] --> B{Fork};
-    B --> C[Path 1: Standard Generation];
-    B --> D[Path 2: Probe Injection];
-    D --> E["+ 'Time is up... summarize'"];
-    E --> F[Forward Pass (No Cache)];
-    F --> G[Extract Attention from </think>];
-    G --> H[Score History Chunks];
-    C --> I[Next Token];
+  A["Current Context"] --> B{"Fork"}
+  B --> C["Path 1: Standard Generation"]
+  B --> D["Path 2: Probe Injection"]
+  D --> E["+ Time is up... summarize"]
+  E --> F["Forward Pass (No Cache)"]
+  F --> G["Extract Attention from <think> end token"]
+  G --> H["Score History Chunks"]
+  C --> I["Next Token"]
 ```
 
 This allows us to peer into the model's "meta-cognition"—seeing what it values in its own history—without the probe text confusing the ongoing solution.
